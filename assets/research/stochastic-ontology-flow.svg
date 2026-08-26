@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Stochastic ontology update flow</title>
+  <desc id="desc">Evolving data and domain knowledge feed an adaptive stochastic ontology, which measures uncertainty, balances fidelity and complexity, and checks freshness before updating.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#31598f"/></marker>
+    <style>.box{fill:#fff;stroke:#b8c6d9;stroke-width:2}.core{fill:#173e7b;stroke:#173e7b;stroke-width:2}.t{font:600 22px Arial,sans-serif;fill:#142d55}.s{font:16px Arial,sans-serif;fill:#52617a}.w{font:600 23px Arial,sans-serif;fill:#fff}.line{fill:none;stroke:#31598f;stroke-width:3;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="900" height="620" fill="#f8fafc"/>
+  <rect class="box" x="40" y="80" width="220" height="120" rx="12"/><text class="t" x="150" y="125" text-anchor="middle">Evolving data</text><text class="s" x="150" y="158" text-anchor="middle">sensors · text · databases</text>
+  <rect class="box" x="40" y="420" width="220" height="120" rx="12"/><text class="t" x="150" y="465" text-anchor="middle">Domain knowledge</text><text class="s" x="150" y="498" text-anchor="middle">rules · expert judgment</text>
+  <path class="line" d="M260 140C340 140 330 250 390 275"/><path class="line" d="M260 480C340 480 330 370 390 345"/>
+  <rect class="core" x="365" y="220" width="250" height="180" rx="18"/><text class="w" x="490" y="278" text-anchor="middle">STOCHASTIC</text><text class="w" x="490" y="310" text-anchor="middle">ONTOLOGY</text><text class="s" x="490" y="350" text-anchor="middle" fill="#dfe8f4">probabilistic · adaptive</text>
+  <path class="line" d="M615 310H690"/>
+  <rect class="box" x="690" y="55" width="180" height="130" rx="12"/><text class="t" x="780" y="100" text-anchor="middle">Measure</text><text class="s" x="780" y="132" text-anchor="middle">entropy &amp;</text><text class="s" x="780" y="156" text-anchor="middle">dependencies</text>
+  <rect class="box" x="690" y="245" width="180" height="130" rx="12"/><text class="t" x="780" y="290" text-anchor="middle">Balance</text><text class="s" x="780" y="322" text-anchor="middle">complexity &amp;</text><text class="s" x="780" y="346" text-anchor="middle">semantic fidelity</text>
+  <rect class="box" x="690" y="435" width="180" height="130" rx="12"/><text class="t" x="780" y="480" text-anchor="middle">Maintain</text><text class="s" x="780" y="512" text-anchor="middle">freshness &amp;</text><text class="s" x="780" y="536" text-anchor="middle">detect drift</text>
+  <path class="line" d="M780 185V235"/><path class="line" d="M780 375V425"/><path class="line" d="M690 500C620 500 620 415 565 395"/>
+</svg>

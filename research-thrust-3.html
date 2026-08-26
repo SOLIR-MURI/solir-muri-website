@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SOLIR research on ontology-guided decentralized learning and inference.">
+<title>SOLIR | Decentralized Learning and Reasoning</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/research-detail.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">SOLIR</span><span class="brand-subtitle">MURI PROJECT</span></a>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav"><a href="index.html">HOME</a><a class="active" href="index.html#research">RESEARCH</a><a href="team.html">TEAM</a><a href="#">PUBLICATIONS</a><a href="index.html#latest-news">NEWS</a><a href="#">OPPORTUNITIES</a><a href="#">CONTACT</a></nav>
+</header>
+
+<main class="research-page">
+  <section class="research-hero">
+    <span class="research-number">RESEARCH THRUST 03</span>
+    <h1>Ontology-Guided Decentralized Learning</h1>
+    <p class="lead">We are designing learning and inference methods for networks that must cooperate without a dependable central coordinator or unlimited communication.</p>
+  </section>
+
+  <section class="research-content">
+    <div class="research-copy">
+      <h2>Why this matters</h2>
+      <p>Many networked systems gather and process data at the edge: sensors, mobile devices, robots, and computing nodes each see only part of the environment. Sending everything to a central server is costly and can create a single point of failure. In tactical or otherwise contested settings, links may be intermittent, nodes may fail or be compromised, and decisions may still be needed in real time.</p>
+      <p>Decentralized learning avoids dependence on one coordinator, but it creates a difficult tradeoff. Consensus methods maintain a model at every node and can be robust, yet frequent synchronization is expensive. Random-walk methods pass a single evolving model through the network and communicate far less, but the process can disappear if the active node fails. Existing approaches also tend to treat every model component and message as equally meaningful.</p>
+
+      <h2>The general problem</h2>
+      <p>Thrust 3 asks how semantic knowledge can determine what moves through a network, when it moves, and how much of it must be sent. The ontological quantization and compression developed in Thrust 1 can preserve the portions of an update that matter to the task. The stochastic ontology from Thrust 2 can guide changing decisions about model partitioning, exchange frequency, aggregation, and early exit.</p>
+      <p>The proposed directions combine the communication efficiency of random walks with mechanisms for resilience. Models may be split so stable representation layers travel less often than task-specific layers. Random walks may self-duplicate when local evidence suggests that other walks have failed. Pull-based walks can request and aggregate only the neighbor information required by an ontological rule. Hybrid methods can allow continual local learning while global updates circulate intermittently.</p>
+      <p>The same principles extend to inference. Instead of storing an entire model everywhere or moving large raw inputs, different workers can execute different model segments. Ontology-guided rules can determine where to split, when an input has been processed sufficiently, and how to compress intermediate features without destroying their downstream meaning.</p>
+
+      <h2>What we aim to establish</h2>
+      <ul>
+        <li>Communication-efficient decentralized learning guided by task meaning rather than message size alone.</li>
+        <li>Robustness to failures, adversarial nodes, changing topology, and limited coordination.</li>
+        <li>Adaptive model distribution and inference across heterogeneous, resource-constrained devices.</li>
+        <li>A feedback loop in which ontologies guide learning and distributed learning refines the ontologies.</li>
+      </ul>
+    </div>
+
+    <figure class="research-visual">
+      <img src="assets/research/proposal-p18-1-Im19.png" alt="Comparison of centralized, random-walk, and consensus decentralized learning">
+      <figcaption>From the SOLIR proposal: centralized learning compared with random-walk and consensus-based decentralized architectures.</figcaption>
+    </figure>
+  </section>
+
+  <nav class="thrust-nav" aria-label="Research thrusts">
+    <a href="research-thrust-1.html">01 — Ontological Information Theory</a>
+    <a href="research-thrust-2.html">02 — Stochastic Ontology</a>
+    <a href="research-thrust-3.html" aria-current="page">03 — Decentralized Learning &amp; Reasoning</a>
+  </nav>
+</main>
+<footer class="site-footer"><div class="full-width footer-inner"><p>SOLIR is a Multidisciplinary University Research Initiative<br>supported by the U.S. Department of Defense.</p><div class="footer-links"><a href="#">PRIVACY POLICY</a><a href="#">ACCESSIBILITY</a></div><span>𝕏</span></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

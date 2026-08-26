@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SOLIR research on stochastic and information-theoretic ontologies.">
+<title>SOLIR | Stochastic Ontology</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/research-detail.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">SOLIR</span><span class="brand-subtitle">MURI PROJECT</span></a>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav"><a href="index.html">HOME</a><a class="active" href="index.html#research">RESEARCH</a><a href="team.html">TEAM</a><a href="#">PUBLICATIONS</a><a href="index.html#latest-news">NEWS</a><a href="#">OPPORTUNITIES</a><a href="#">CONTACT</a></nav>
+</header>
+
+<main class="research-page">
+  <section class="research-hero">
+    <span class="research-number">RESEARCH THRUST 02</span>
+    <h1>Toward a Stochastic Ontology</h1>
+    <p class="lead">We are building knowledge representations that can express uncertainty, learn from new evidence, and revise themselves as the world changes.</p>
+  </section>
+
+  <section class="research-content">
+    <div class="research-copy">
+      <h2>Why this matters</h2>
+      <p>Traditional ontologies are powerful because they make concepts and rules explicit, but they tend to describe a fixed world. Real environments are neither fixed nor fully observed. Sensor readings conflict, language is ambiguous, expert judgments vary, and relationships that were once reliable can become stale. Adding a probability to a rule captures a snapshot of uncertainty; it does not by itself explain how the knowledge structure should evolve as evidence and context change.</p>
+      <p>SOLIR’s goal is a stochastic ontology: a representation in which concepts, relationships, and axioms can carry uncertainty and change through time. It must retain the interpretability of rule-based knowledge while gaining the ability to learn, restructure, and refine its probabilistic parameters.</p>
+
+      <h2>The general problem</h2>
+      <p>The central challenge is not simply to attach confidence scores to an existing graph. The system must decide when uncertainty signals a missing concept, which dependencies are informative enough to preserve, and how to update without allowing the ontology to grow without bound or forget essential prior knowledge.</p>
+      <p>Information theory provides a disciplined way to make those decisions. Entropy can reveal where the ontology remains uncertain; conditional and mutual information can expose relationships between evidence and concepts. Rate–distortion reasoning can balance a compact, computationally manageable representation against the semantic loss introduced by merging or removing distinctions. Age-of-information can indicate when knowledge has become stale even if it was once accurate.</p>
+      <p>The proposal explores complementary language, generative-process, and graph views of the same evolving knowledge system. Together they support possible worlds, context-dependent updates, temporal transitions, structural analysis, and alignment between different ontologies.</p>
+
+      <h2>What we aim to establish</h2>
+      <ul>
+        <li>A rigorous representation for probabilistic concepts, relations, and rules that evolve with evidence.</li>
+        <li>Update mechanisms that prioritize uncertainty and preserve informative dependencies.</li>
+        <li>Principled control of the tradeoff between semantic fidelity and ontology complexity.</li>
+        <li>Ways to detect drift and maintain fresh, task-relevant knowledge over time.</li>
+      </ul>
+    </div>
+
+    <figure class="research-visual">
+      <img src="assets/research/stochastic-ontology-flow.svg" alt="Evolving data and domain knowledge feeding a stochastic ontology update cycle">
+      <figcaption>Adapted from the proposal’s stochastic ontology framework and update engine: evolving evidence is measured, compressed with controlled semantic loss, and checked for freshness.</figcaption>
+    </figure>
+  </section>
+
+  <nav class="thrust-nav" aria-label="Research thrusts">
+    <a href="research-thrust-1.html">01 — Ontological Information Theory</a>
+    <a href="research-thrust-2.html" aria-current="page">02 — Stochastic Ontology</a>
+    <a href="research-thrust-3.html">03 — Decentralized Learning &amp; Reasoning</a>
+  </nav>
+</main>
+<footer class="site-footer"><div class="full-width footer-inner"><p>SOLIR is a Multidisciplinary University Research Initiative<br>supported by the U.S. Department of Defense.</p><div class="footer-links"><a href="#">PRIVACY POLICY</a><a href="#">ACCESSIBILITY</a></div><span>𝕏</span></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

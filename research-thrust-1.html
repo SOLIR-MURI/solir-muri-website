@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SOLIR research on information-theoretic foundations for ontological reasoning.">
+<title>SOLIR | Ontological Information Theory</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/research-detail.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-name">SOLIR</span><span class="brand-subtitle">MURI PROJECT</span></a>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav"><a href="index.html">HOME</a><a class="active" href="index.html#research">RESEARCH</a><a href="team.html">TEAM</a><a href="#">PUBLICATIONS</a><a href="index.html#latest-news">NEWS</a><a href="#">OPPORTUNITIES</a><a href="#">CONTACT</a></nav>
+</header>
+
+<main class="research-page">
+  <section class="research-hero">
+    <span class="research-number">RESEARCH THRUST 01</span>
+    <h1>Structured Knowledge Meets Entropy</h1>
+    <p class="lead">We are developing an information theory for systems that need the meaning of data—not necessarily every detail of the data itself.</p>
+  </section>
+
+  <section class="research-content">
+    <div class="research-copy">
+      <h2>Why this matters</h2>
+      <p>Sensors, devices, and databases can produce far more data than a network can afford to transmit, store, or process. Yet the purpose of collecting a signal is usually not to reproduce it perfectly. A system may need only enough information to decide whether a vehicle should stop, whether two observations refer to the same event, or whether a safety rule has been violated. Those questions are defined by an ontology: the concepts, relationships, and rules that give the data operational meaning.</p>
+      <p>Conventional compression treats faithful reconstruction of the source as the objective. SOLIR asks a different question: what is the smallest representation that still supports the reasoning task? By letting the ontology determine which distinctions matter, a system can avoid spending bandwidth and energy on details that do not affect the decision.</p>
+
+      <h2>The general problem</h2>
+      <p>Thrust 1 extends this idea across centralized, distributed, and networked settings. With one source, the challenge is to acquire only the features needed by the task. With several sources, the system should also exploit correlations among observations. Across a network, it must decide how task-relevant information should be represented and moved when links, energy, and time are limited.</p>
+      <p>The work brings two information-theoretic tools into an ontological setting. <em>Ontological quantization</em> determines what should be measured and which bits are most important for the governing rules. <em>Ontological compression</em> seeks the minimum communication needed to compute the desired function rather than reconstruct all source data. The representation must also remain useful when the ontology changes, when one signal supports several tasks, or when the source distribution is not known exactly.</p>
+
+      <h2>What we aim to establish</h2>
+      <ul>
+        <li>Fundamental tradeoffs between representation cost and task accuracy.</li>
+        <li>Practical, low-delay codes that preserve the most consequential semantic distinctions.</li>
+        <li>Representations robust to changing rules, uncertain tasks, and mismatched data distributions.</li>
+        <li>A foundation that Thrusts 2 and 3 can use for adaptive ontologies and efficient networked learning.</li>
+      </ul>
+    </div>
+
+    <figure class="research-visual">
+      <img src="assets/research/proposal-p7-1-Im9.jpg" alt="Distributed encoders sending task-relevant representations through a network to a decoder">
+      <figcaption>From the SOLIR proposal: a network setting in which distributed observations must be encoded, processed, and delivered under failures and communication constraints.</figcaption>
+    </figure>
+  </section>
+
+  <nav class="thrust-nav" aria-label="Research thrusts">
+    <a href="research-thrust-1.html" aria-current="page">01 — Ontological Information Theory</a>
+    <a href="research-thrust-2.html">02 — Stochastic Ontology</a>
+    <a href="research-thrust-3.html">03 — Decentralized Learning &amp; Reasoning</a>
+  </nav>
+</main>
+<footer class="site-footer"><div class="full-width footer-inner"><p>SOLIR is a Multidisciplinary University Research Initiative<br>supported by the U.S. Department of Defense.</p><div class="footer-links"><a href="#">PRIVACY POLICY</a><a href="#">ACCESSIBILITY</a></div><span>𝕏</span></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
