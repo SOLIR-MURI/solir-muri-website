@@ -150,7 +150,16 @@
 }
 
 .workshop-hero {
-  padding-bottom: 60px;
+  padding: 48px 5.5% 60px;
+  border-bottom: 1px solid rgba(25, 51, 94, 0.12);
+}
+
+.workshop-hero .featured-news-item {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
 }
 
 .location-section {
