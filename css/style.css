@@ -1,4 +1,6 @@
 :root{--navy:#10254d;--blue:#173d91;--line:#dce2ec}
+.workshop-slides-link { margin-left: 24px; }
+@media (max-width: 600px) { .workshop-slides-link { margin-left: 0; margin-top: 18px; display: flex; width: fit-content; } }
 *{box-sizing:border-box}body{margin:0;color:var(--navy);background:#fff;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}
 .full-width,.site-header{width:calc(100% - 96px);margin-left:auto;margin-right:auto}
 .site-header{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;flex-direction:column;line-height:1}.brand-name{font-family:Georgia,serif;font-size:28px;letter-spacing:7px}.brand-subtitle{margin-top:6px;font-size:9px;letter-spacing:3px;color:#71809b}
@@ -125,3 +127,14 @@
 .featured-news-location-link { display: block; font-size: 15px; text-decoration: none; }
 .featured-news-location-link:hover { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
 .featured-news-location-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+
+/* Workshop photography keeps the full group visible at every screen size. */
+.featured-news-with-photo { max-width: none; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); padding: clamp(20px, 3vw, 40px); align-items: center; }
+.workshop-photo { margin: 0; min-width: 0; }
+.workshop-photo img { display: block; width: 100%; height: auto; }
+.workshop-photo figcaption { margin-top: 12px; font-size: 12px; line-height: 1.6; color: #53627b; text-align: left; }
+.featured-news-photo a { display: block; }
+.featured-news-photo a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+.featured-news-with-photo .featured-news-location { text-align: left; }
+.featured-news-with-photo .text-link { margin-left: 0; margin-right: 20px; }
+@media (max-width: 900px) { .featured-news-with-photo { grid-template-columns: 1fr; } }
